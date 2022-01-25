@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+:root{
+    --white: #fff;
+    --text-black: #3C3C3C;
+    --intro-black: #4B4B4B;
+    --h2-text: #848A92;
+    --bg: #F7F7F7;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100vw;
+    color: var(--text-black);
+    font-family: 'IBM Plex Sans', "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    font-family: 游ゴシック, YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    word-break: break-word;
+    word-wrap: break-word;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;
+    -webkit-text-size-adjust: 100%;
+}
+body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+    display:none;
+}
+img{
+    display: block;
+    width: 100%;
+}
+button{
+    background-color: transparent;
+    border: transparent;
+    padding: 0;
+    margin: 0;
+}
+input{
+    display: none;
+}
+label{
+    display: block;
+    width: 100%;
+}
+.text{
+    font-size: 1.5rem;
+    line-height: 1.75;
+}
+.mainvisual{
+    position: relative;
+    margin-bottom: 50px;
+}
+.title-h1{
+    width: fit-content;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title-h1_small{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.intro__title{
+    font-size: 1.8rem;
+    line-height: 1.7;
+    font-weight: 600;
+    text-align: center;
+    color: var(--intro-black);
+    margin-bottom: 45px;
+}
+.intro{
+    padding: 0 5%;
+    margin-bottom: 100px;
+}
+.intro__text{
+    line-height: 1.85;
+}
+
+.title-h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+    margin-bottom: 45px;
+}
+.title-h2::before{
+    display: block;
+    font-weight: 500;
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    text-align: center;
+    color: #C4C4C4;
+    margin-bottom: 10px;
+}
+.title-h2__text{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--h2-text);
+}
+.title-h2__text::before{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #C4C4C4;
+    margin-right: 10px;
+}
+.title-h2__text::after{
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: #C4C4C4;
+    margin-left: 10px;
+}
+
+/* btn */
+.link-wrapper{
+    margin: 0 auto 65px;
+}
+.link-wrapper__text{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 36px;
+    border: 3px solid #C4C4C4;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-black);
+    margin: 0 auto;
+}
