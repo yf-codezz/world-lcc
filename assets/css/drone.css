@@ -26,7 +26,7 @@
     display: block;
     content: counter(number, decimal-leading-zero) "";
     counter-increment: number 1;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
     font-style: italic;
@@ -36,7 +36,7 @@
 .advantages__item-text{
     flex: 1;
     font-size: 1.6rem;
-    line-height: 1.85;
+    line-height: 1.7;
     font-weight: 600;
 }
 
@@ -148,7 +148,7 @@
     margin-bottom: 0;
 }
 .compliance__list{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 .compliance__item{
     display: flex;
@@ -233,13 +233,13 @@
     text-decoration: underline;
     color: #59A5FF;
 }
+.climbing__photo{
+    display: block;
+    margin-bottom: 25px;
+}
 .climbing-unit{
     margin-bottom: 30px;
 }
-.climbing-unit:last-of-type{
-    margin-bottom: 0;
-}
-
 .climbing-unit__title{
     font-size: 1.8rem;
     font-weight: 600;

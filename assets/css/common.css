@@ -9,6 +9,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     width: 100vw;
@@ -60,9 +61,9 @@ label{
     color: var(--white);
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.6);
     position: absolute;
-    top: 50%;
+    top: calc((100% - 65px) / 2);
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
 }
 .title-h1_small{
     display: block;
@@ -149,4 +150,16 @@ label{
     font-weight: 600;
     color: var(--text-black);
     margin: 0 auto;
+}
+
+/* ページトップへbtn */
+.floating{
+    display: none;
+    width: 35px;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+}
+.floating__svg{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)) ;
 }
