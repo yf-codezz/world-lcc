@@ -128,7 +128,52 @@ label{
     background-color: #C4C4C4;
     margin-left: 10px;
 }
+.br_pc{
+    display: none;
+}
+@media (min-width: 768px) {
+    .br_sp{
+        display: none;
+    }
+    .br_pc{
+        display: block;
+    }
+    .text{
+        font-size: 1.6rem;
+    }
+    .mainvisual{
+        position: relative;
+        margin-bottom: 100px;
+    }
+    .title-h1{
+        font-size: 5.5rem;
+        top: calc((100% - 80px) / 2);
+    }
+    .title-h1_small{
+        font-size: 2.6rem;
+        margin-top: 15px;
+    }
+    .intro__title{
+        font-size: 2.8rem;
+        margin-bottom: 40px;
+    }
+    .intro{
+        max-width: calc(1004px + 10%);
+        padding: 0 5%;
+        margin: 0 auto 100px;
+    }
 
+    .title-h2{
+        margin-bottom: 45px;
+    }
+    .title-h2::before{
+        font-size: 4.2rem;
+        margin-bottom: 10px;
+    }
+    .title-h2__text{
+        font-size: 2rem;
+    }
+}
 /* btn */
 .link-wrapper{
     margin: 0 auto 65px;
@@ -151,7 +196,20 @@ label{
     color: var(--text-black);
     margin: 0 auto;
 }
-
+@media (min-width: 768px) {
+    .link-wrapper{
+        margin: 0 auto 65px;
+    }
+    .link-wrapper__text{
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    .btn{
+        width: 200px;
+        height: 48px;
+        font-size: 1.8rem;
+    }
+}
 /* ページトップへbtn */
 .floating{
     display: none;
@@ -162,4 +220,11 @@ label{
 }
 .floating__svg{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5)) ;
+    transition: all 0.3s ease-out;
+}
+@media (min-width: 768px) {
+    .floating__svg:hover{
+        filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.6)) ;
+        transition: all 0.3s ease-out;
+    }
 }

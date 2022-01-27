@@ -5,7 +5,6 @@
 .title-h2_advantages::before{
     content: "Advantages";
 }
-
 .advantages__list{
     counter-reset: number;
     padding: 0 5%;
@@ -18,7 +17,6 @@
 .advantages__item_center{
     align-items: center;
 }
-
 .advantages__item:last-of-type{
     margin-bottom: 0;
 }
@@ -39,12 +37,10 @@
     line-height: 1.7;
     font-weight: 600;
 }
-
 .advantages-section{
     padding: 0 5%;
     margin-bottom: 80px;
 }
-
 .advantages__title::before{
     display: block;
     content: counter(number, decimal-leading-zero) "";
@@ -60,11 +56,34 @@
     text-align: center;
     margin-bottom: 25px;
 }
-
 .advantages__title-text{
     visibility: collapse;
 }
+@media (min-width: 768px) {
+    .advantages{
+    }
+    .advantages__list{
+        width: fit-content;
+        margin: 0 auto 70px;
+    }
+    .advantages__item{
+        align-items: center;
+        margin: 0 0 15px auto;
+    }
+    .advantages__item::before{
+        margin-right: 35px;
+    }
+    .advantages-section{
+        margin: 0 auto 100px;
+    }
+    .advantages__title::before{
+        font-size: 3.5rem;
+    }
+    .advantages__title{
+        margin-bottom: 25px;
+    }
 
+}
 /* 01登山・建設物に精通した撮影と操縦による、幅広い活用シーン */
 .scene{
     counter-reset: number;
@@ -86,9 +105,7 @@
 .scene__item:nth-last-of-type(2){
     margin-bottom: 0;
 }
-
 .scene-unit{
-
 }
 .scene-unit__title{
     display: flex;
@@ -114,32 +131,54 @@
 }
 .scene-unit__title_tv-cm::before{
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzUiIGhlaWdodD0iNzUiIHZpZXdCb3g9IjAgMCA3NSA3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzcuNSIgY3k9IjM3LjUiIHI9IjM3LjUiIGZpbGw9IiM0MDk4RkYiLz4KPHBhdGggZD0iTTU1IDIySDIxQzIwLjIwNDQgMjIgMTkuNDQxMyAyMi4zMTYxIDE4Ljg3ODcgMjIuODc4N0MxOC4zMTYxIDIzLjQ0MTMgMTggMjQuMjA0NCAxOCAyNVY0NUMxOCA0NS43OTU2IDE4LjMxNjEgNDYuNTU4NyAxOC44Nzg3IDQ3LjEyMTNDMTkuNDQxMyA0Ny42ODM5IDIwLjIwNDQgNDggMjEgNDhIMzZWNTBIMjVDMjQuNzM0OCA1MCAyNC40ODA0IDUwLjEwNTQgMjQuMjkyOSA1MC4yOTI5QzI0LjEwNTQgNTAuNDgwNCAyNCA1MC43MzQ4IDI0IDUxVjUzQzI0IDUzLjI2NTIgMjQuMTA1NCA1My41MTk2IDI0LjI5MjkgNTMuNzA3MUMyNC40ODA0IDUzLjg5NDYgMjQuNzM0OCA1NCAyNSA1NEg1MUM1MS4yNjUyIDU0IDUxLjUxOTYgNTMuODk0NiA1MS43MDcxIDUzLjcwNzFDNTEuODk0NiA1My41MTk2IDUyIDUzLjI2NTIgNTIgNTNWNTFDNTIgNTAuNzM0OCA1MS44OTQ2IDUwLjQ4MDQgNTEuNzA3MSA1MC4yOTI5QzUxLjUxOTYgNTAuMTA1NCA1MS4yNjUyIDUwIDUxIDUwSDQwVjQ4SDU1QzU1Ljc5NTcgNDggNTYuNTU4NyA0Ny42ODM5IDU3LjEyMTMgNDcuMTIxM0M1Ny42ODM5IDQ2LjU1ODcgNTggNDUuNzk1NiA1OCA0NVYyNUM1OCAyNC4yMDQ0IDU3LjY4MzkgMjMuNDQxMyA1Ny4xMjEzIDIyLjg3ODdDNTYuNTU4NyAyMi4zMTYxIDU1Ljc5NTcgMjIgNTUgMjJWMjJaTTU0IDQ0SDIyVjI2SDU0VjQ0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
-
 }
 .scene-unit__title_agri::before{
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzYiIGhlaWdodD0iNzUiIHZpZXdCb3g9IjAgMCA3NiA3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzgiIGN5PSIzNy41IiByPSIzNy41IiBmaWxsPSIjNDA5OEZGIi8+CjxwYXRoIGQ9Ik0zOC4wMDEgMzAuNUMzMy44NjggMzAuNSAzMC41MDA2IDMzLjg2NzIgMzAuNTAwNiAzOEMzMC41MDA2IDQyLjEzMjggMzMuODY4IDQ1LjUgMzguMDAxIDQ1LjVDNDIuMTM0IDQ1LjUgNDUuNTAxMyA0Mi4xMzI4IDQ1LjUwMTMgMzhDNDUuNTAxMyAzMy44NjcyIDQyLjEzNCAzMC41IDM4LjAwMSAzMC41Wk01Ny4yNTE5IDM2Ljc4OTFMNDkuODUzMSAzMy4wOTM4TDUyLjQ3MDQgMjUuMjVDNTIuODIyIDI0LjE4NzUgNTEuODE0MSAyMy4xNzk3IDUwLjc1OTQgMjMuNTM5MUw0Mi45MTUzIDI2LjE1NjJMMzkuMjEyIDE4Ljc1QzM4LjcxMTkgMTcuNzUgMzcuMjkgMTcuNzUgMzYuNzkgMTguNzVMMzMuMDk0NSAyNi4xNDg0TDI1LjI0MjUgMjMuNTMxMkMyNC4xOCAyMy4xNzk3IDIzLjE3MjEgMjQuMTg3NSAyMy41MzE1IDI1LjI0MjJMMjYuMTQ4OCAzMy4wODU5TDE4Ljc1IDM2Ljc4OTFDMTcuNzUgMzcuMjg5MSAxNy43NSAzOC43MTA5IDE4Ljc1IDM5LjIxMDlMMjYuMTQ4OCA0Mi45MDYyTDIzLjUzMTUgNTAuNzU3OEMyMy4xNzk5IDUxLjgyMDMgMjQuMTg3OCA1Mi44MjgxIDI1LjI0MjUgNTIuNDY4OEwzMy4wODY3IDQ5Ljg1MTZMMzYuNzgyMiA1Ny4yNUMzNy4yODIyIDU4LjI1IDM4LjcwNDEgNTguMjUgMzkuMjA0MiA1Ny4yNUw0Mi44OTk2IDQ5Ljg1MTZMNTAuNzQzOCA1Mi40Njg4QzUxLjgwNjMgNTIuODIwMyA1Mi44MTQyIDUxLjgxMjUgNTIuNDU0OCA1MC43NTc4TDQ5LjgzNzUgNDIuOTE0MUw1Ny4yMzYzIDM5LjIxODhDNTguMjUyIDM4LjcxMDkgNTguMjUyIDM3LjI4OTEgNTcuMjUxOSAzNi43ODkxWk00NS4wNzE2IDQ1LjA3MDNDNDEuMTczIDQ4Ljk2ODggMzQuODI4OSA0OC45Njg4IDMwLjkzMDMgNDUuMDcwM0MyNy4wMzE3IDQxLjE3MTkgMjcuMDMxNyAzNC44MjgxIDMwLjkzMDMgMzAuOTI5N0MzNC44Mjg5IDI3LjAzMTIgNDEuMTczIDI3LjAzMTIgNDUuMDcxNiAzMC45Mjk3QzQ4Ljk3MDMgMzQuODI4MSA0OC45NzAzIDQxLjE3MTkgNDUuMDcxNiA0NS4wNzAzWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
-
 }
 .scene-unit__title_infra::before{
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzYiIGhlaWdodD0iNzUiIHZpZXdCb3g9IjAgMCA3NiA3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzgiIGN5PSIzNy41IiByPSIzNy41IiBmaWxsPSIjNDA5OEZGIi8+CjxwYXRoIGQ9Ik01OCAyOC44MzMzVjUxLjU0NzZDNTggNTMuNjM3NiA1Ni4zMjAzIDU1LjMzMzMgNTQuMjUgNTUuMzMzM0gyMS43NUMxOS42Nzk3IDU1LjMzMzMgMTggNTMuNjM3NiAxOCA1MS41NDc2VjI4LjgzMzNDMTggMjYuNzQzMyAxOS42Nzk3IDI1LjA0NzYgMjEuNzUgMjUuMDQ3NkgyOC42MjVMMjkuNTg1OSAyMi40NTI4QzMwLjEzMjggMjAuOTc4IDMxLjUzMTIgMjAgMzMuMDkzOCAyMEg0Mi44OTg0QzQ0LjQ2MDkgMjAgNDUuODU5NCAyMC45NzggNDYuNDA2MiAyMi40NTI4TDQ3LjM3NSAyNS4wNDc2SDU0LjI1QzU2LjMyMDMgMjUuMDQ3NiA1OCAyNi43NDMzIDU4IDI4LjgzMzNaTTQ3LjM3NSA0MC4xOTA1QzQ3LjM3NSAzNC45NjkzIDQzLjE3MTkgMzAuNzI2MiAzOCAzMC43MjYyQzMyLjgyODEgMzAuNzI2MiAyOC42MjUgMzQuOTY5MyAyOC42MjUgNDAuMTkwNUMyOC42MjUgNDUuNDExNiAzMi44MjgxIDQ5LjY1NDggMzggNDkuNjU0OEM0My4xNzE5IDQ5LjY1NDggNDcuMzc1IDQ1LjQxMTYgNDcuMzc1IDQwLjE5MDVaTTQ0Ljg3NSA0MC4xOTA1QzQ0Ljg3NSA0NC4wMTU2IDQxLjc4OTEgNDcuMTMxIDM4IDQ3LjEzMUMzNC4yMTA5IDQ3LjEzMSAzMS4xMjUgNDQuMDE1NiAzMS4xMjUgNDAuMTkwNUMzMS4xMjUgMzYuMzY1MyAzNC4yMTA5IDMzLjI1IDM4IDMzLjI1QzQxLjc4OTEgMzMuMjUgNDQuODc1IDM2LjM2NTMgNDQuODc1IDQwLjE5MDVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K);
-
 }
 .scene-unit__title_inspe::before{
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzUiIGhlaWdodD0iNzUiIHZpZXdCb3g9IjAgMCA3NSA3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzcuNSIgY3k9IjM3LjUiIHI9IjM3LjUiIGZpbGw9IiM0MDk4RkYiLz4KPHBhdGggZD0iTTMyLjEwMjEgMjYuMDA1M0MzMC4zMTM4IDI2LjA3NDEgMjguNjk3MSAyNi43MTI0IDI3LjgzMjcgMjcuNTc3OEMyNy43MzcyIDI3LjY3MzIgMjcuNjIzOSAyNy43NDg5IDI3LjQ5OTIgMjcuODAwNUMyNy4zNzQ0IDI3Ljg1MjEgMjcuMjQwNyAyNy44Nzg2IDI3LjEwNTcgMjcuODc4NkMyNi45NzA3IDI3Ljg3ODUgMjYuODM3MSAyNy44NTE5IDI2LjcxMjQgMjcuODAwMkMyNi41ODc3IDI3Ljc0ODUgMjYuNDc0NCAyNy42NzI3IDI2LjM3OSAyNy41NzcyQzI2LjI4MzUgMjcuNDgxOCAyNi4yMDc5IDI3LjM2ODQgMjYuMTU2MiAyNy4yNDM3QzI2LjEwNDYgMjcuMTE4OSAyNi4wNzgxIDI2Ljk4NTIgMjYuMDc4MSAyNi44NTAzQzI2LjA3ODIgMjYuNzE1MyAyNi4xMDQ4IDI2LjU4MTYgMjYuMTU2NSAyNi40NTY5QzI2LjIwODIgMjYuMzMyMiAyNi4yODQgMjYuMjE4OSAyNi4zNzk1IDI2LjEyMzVDMjcuNzEyNSAyNC43OTA0IDI5Ljg4MzEgMjQuMDM0IDMyLjAyMTkgMjMuOTUwOEMzNC4xNzUxIDIzLjg2NzUgMzYuNTI1NiAyNC40NTY0IDM4LjE3MjEgMjYuMTAyOUMzOC4zNjQ4IDI2LjI5NTggMzguNDczIDI2LjU1NzMgMzguNDcyOSAyNi44Mjk5QzM4LjQ3MjggMjcuMTAyNSAzOC4zNjQ0IDI3LjM2NCAzOC4xNzE2IDI3LjU1NjdDMzcuOTc4NyAyNy43NDk0IDM3LjcxNzIgMjcuODU3NiAzNy40NDQ2IDI3Ljg1NzVDMzcuMTcyIDI3Ljg1NzQgMzYuOTEwNSAyNy43NDkgMzYuNzE3OCAyNy41NTYyQzM1LjU5NzUgMjYuNDM0OSAzMy44NzcxIDI1LjkzNTQgMzIuMTAyMSAyNi4wMDQyVjI2LjAwNTNaIiBmaWxsPSJ3aGl0ZSIvPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTQyLjU3MjkgNDAuOTc3OEM0NC42MTA4IDM4LjU2OTYgNDUuNzI2OSAzNS41MTU4IDQ1LjcyMiAzMi4zNjFDNDUuNzIyIDI0Ljk4MTYgMzkuNzQwNCAxOSAzMi4zNjEgMTlDMjQuOTgxNiAxOSAxOSAyNC45ODE2IDE5IDMyLjM2MUMxOSAzOS43NDA0IDI0Ljk4MTYgNDUuNzIyIDMyLjM2MSA0NS43MjJDMzUuNjQ0NyA0NS43MjIgMzguNjUxIDQ0LjUzOCA0MC45Nzc4IDQyLjU3MjlMNDAuNTgzMiA0NC44NDIzTDQ4LjMwNTkgNTIuNTY0OUw1Mi41NjQ5IDQ4LjMwNTlMNDQuODQyMyA0MC41ODMyTDQyLjU3MjkgNDAuOTc3OFpNMzIuMzYxIDQyLjYzODdDMzguMDM3NCA0Mi42Mzg3IDQyLjYzODcgMzguMDM3NCA0Mi42Mzg3IDMyLjM2MUM0Mi42Mzg3IDI2LjY4NDYgMzguMDM3NCAyMi4wODMzIDMyLjM2MSAyMi4wODMzQzI2LjY4NDYgMjIuMDgzMyAyMi4wODMzIDI2LjY4NDYgMjIuMDgzMyAzMi4zNjFDMjIuMDgzMyAzOC4wMzc0IDI2LjY4NDYgNDIuNjM4NyAzMi4zNjEgNDIuNjM4N1oiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik00OS43NTk4IDU0LjAxODFMNTQuMDE4OCA0OS43NTlMNTUuNDEyNSA1MS4xNTI3QzU2LjE5NjcgNTEuOTM2OSA1Ni4xOTY3IDUzLjIwODIgNTUuNDEyNSA1My45OTE0TDUzLjk5MjEgNTUuNDExOEM1My4yMDc5IDU2LjE5NiA1MS45MzY2IDU2LjE5NiA1MS4xNTM0IDU1LjQxMThMNDkuNzU5OCA1NC4wMTgxWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
-
 }
 .scene-unit__title_surv::before{
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzYiIGhlaWdodD0iNzUiIHZpZXdCb3g9IjAgMCA3NiA3NSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzgiIGN5PSIzNy41IiByPSIzNy41IiBmaWxsPSIjNDA5OEZGIi8+CjxwYXRoIGQ9Ik0zMi4xODc1IDM5LjQzNzVIMjguNzk2OUMyOC41MjkzIDM5LjQzNzUgMjguMzEyNSAzOS4yMjA3IDI4LjMxMjUgMzguOTUzMVYzNy45ODQ0QzI4LjMxMjUgMzcuNzE2OCAyOC41MjkzIDM3LjUgMjguNzk2OSAzNy41SDMyLjE4NzVWMzMuNjI1SDI4Ljc5NjlDMjguNTI5MyAzMy42MjUgMjguMzEyNSAzMy40MDgyIDI4LjMxMjUgMzMuMTQwNlYzMi4xNzE5QzI4LjMxMjUgMzEuOTA0MyAyOC41MjkzIDMxLjY4NzUgMjguNzk2OSAzMS42ODc1SDMyLjE4NzVWMjcuODEyNUgyOC43OTY5QzI4LjUyOTMgMjcuODEyNSAyOC4zMTI1IDI3LjU5NTcgMjguMzEyNSAyNy4zMjgxVjI2LjM1OTRDMjguMzEyNSAyNi4wOTE4IDI4LjUyOTMgMjUuODc1IDI4Ljc5NjkgMjUuODc1SDMyLjE4NzVWMjMuOTM3NUMzMi4xODc1IDIyLjg2NzYgMzEuMzE5OSAyMiAzMC4yNSAyMkgyNC40Mzc1QzIzLjM2NzYgMjIgMjIuNSAyMi44Njc2IDIyLjUgMjMuOTM3NVY1MS4wNjI1QzIyLjUgNTEuMjMwMiAyMi41NTUxIDUxLjM3OTggMjIuNTk1MSA1MS41MzQ4TDMyLjE4NzUgNDEuOTQyOVYzOS40Mzc1Wk01MS41NjI1IDQzLjMxMjVINDkuNjI1VjQ2LjcwMzFDNDkuNjI1IDQ2Ljk3MDcgNDkuNDA4MiA0Ny4xODc1IDQ5LjE0MDYgNDcuMTg3NUg0OC4xNzE5QzQ3LjkwNDMgNDcuMTg3NSA0Ny42ODc1IDQ2Ljk3MDcgNDcuNjg3NSA0Ni43MDMxVjQzLjMxMjVINDMuODEyNVY0Ni43MDMxQzQzLjgxMjUgNDYuOTcwNyA0My41OTU3IDQ3LjE4NzUgNDMuMzI4MSA0Ny4xODc1SDQyLjM1OTRDNDIuMDkxOCA0Ny4xODc1IDQxLjg3NSA0Ni45NzA3IDQxLjg3NSA0Ni43MDMxVjQzLjMxMjVIMzhWNDYuNzAzMUMzOCA0Ni45NzA3IDM3Ljc4MzIgNDcuMTg3NSAzNy41MTU2IDQ3LjE4NzVIMzYuNTQ2OUMzNi4yNzkzIDQ3LjE4NzUgMzYuMDYyNSA0Ni45NzA3IDM2LjA2MjUgNDYuNzAzMVY0My4zMTI1SDMzLjU1NzdMMjMuOTY1MiA1Mi45MDQ5QzI0LjEyMDIgNTIuOTQ0OSAyNC4yNzA0IDUzIDI0LjQzNzUgNTNINTEuNTYyNUM1Mi42MzI0IDUzIDUzLjUgNTIuMTMyNCA1My41IDUxLjA2MjVWNDUuMjVDNTMuNSA0NC4xODAxIDUyLjYzMjQgNDMuMzEyNSA1MS41NjI1IDQzLjMxMjVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K);
-
 }
-
 .scene-unit__text{
     font-size: 1.4rem;
 }
+@media (min-width: 768px) {
+    .scene{
+        padding: 45px 5% 60px;
+    }
+    .scene__list{
+        max-width: calc(1004px + 10%);
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .scene__item{
+        width: calc((100% - 80px) / 3);
+        margin: 0 0 40px 0;
+    }
+    .scene__item:last-of-type{
+        margin-bottom: 0;
+    }
+    .scene__item:nth-last-of-type(2){
+        margin-bottom: 0;
+    }
+    .scene__item:nth-last-of-type(3){
+        margin-bottom: 0;
+    }
+    .scene-unit__title{
+        font-size: 1.7rem;
+    }
+    .scene-unit__text{
+        font-size: 1.6rem;
+    }
 
+}
 /* 02各法令に準じたドローン飛行 */
 .compliance{
-
 }
 .compliance__text{
     margin-bottom: 15px;
@@ -169,9 +208,25 @@
     background-size: cover;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTciIHZpZXdCb3g9IjAgMCAxOCAxNyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1LjY2ODcgNi4zMDI3OUMxNS44OTEgNy4wMTQ4NiAxNi4wMDI3IDcuNzU2ODIgMTYgOC41MDI3OEMxNS45OTkzIDEwLjE3MzggMTUuNDQwNyAxMS43OTY4IDE0LjQxMjYgMTMuMTE0MUMxMy4zODQ1IDE0LjQzMTUgMTEuOTQ2IDE1LjM2NzggMTAuMzI1MiAxNS43NzQ1QzguNzA0MzggMTYuMTgxMSA2Ljk5NDIgMTYuMDM0OSA1LjQ2NiAxNS4zNTg5QzMuOTM3OCAxNC42ODI5IDIuNjc5MTIgMTMuNTE1OSAxLjg4OTY5IDEyLjA0MzFDMS4xMDAyNyAxMC41NzAzIDAuODI1MzE1IDguODc2MDIgMS4xMDg0NiA3LjIyOTE1QzEuMzkxNjEgNS41ODIyOCAyLjIxNjY0IDQuMDc3MTQgMy40NTI2MyAyLjk1MjU2QzQuNjg4NjMgMS44Mjc5OCA2LjI2NDc5IDEuMTQ4MzkgNy45MzEwMSAxLjAyMTYyQzkuNTk3MjMgMC44OTQ4NSAxMS4yNTgxIDEuMzI4MTYgMTIuNjUgMi4yNTI4IiBzdHJva2U9IiM1RTVFNUUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNNS44NDM3NSA4LjA5MDM2TDguMDkzNzQgMTAuMzQwNEwxNC44ODc1IDMuNTQ2NjMiIHN0cm9rZT0iIzQwOThGRiIgc3Ryb2tlLXdpZHRoPSI0IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiLz4KPC9zdmc+Cg==);
     margin: 3px 15px 0 0;
-
 }
-
+@media (min-width: 768px) {
+    .compliance{
+    }
+    .compliance__text{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .compliance__list{
+        display: flex;
+        max-width: 1004px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto 25px;
+    }
+    .compliance__item{
+        width: calc((470 / 1004) * 100%);
+    }
+}
 
 /* 登山 × ドローン = ？？ */
 .climbing-drone{
@@ -202,13 +257,33 @@
     margin-top: 4px;
 }
 .climbing-drone__text{
-    font-style: 1.6rem;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.8;
     color: var(--white);
-
 }
-
+@media (min-width: 768px) {
+    .climbing-drone{
+        background-image: url(/assets/img/youtei.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-x: 60%;
+        background-position-y: 55%;
+        padding: 85px 5% 120px;
+        margin-bottom: 10px;
+    }
+    .climbing-drone__title{
+        font-size: 3rem;
+        margin: 0 auto 40px;
+    }
+    .climbing-drone__title::after{
+        margin-top: 10px;
+    }
+    .climbing-drone__text{
+        text-align: center;
+        line-height: 2;
+    }
+}
 /* 03登山歴多数の弊社だからこそ撮れる、雄大な自然を魅せる『映像心』のある映像 */
 .climbing{
     background-color: var(--bg);
@@ -227,7 +302,6 @@
 .climbing__text:last-of-type{
     margin-bottom: 0;
 }
-
 .climbing__text-link{
     font-weight: 600;
     text-decoration: underline;
@@ -237,7 +311,7 @@
     display: block;
     margin-bottom: 25px;
 }
-.climbing-unit{
+.climbing__item:first-of-type{
     margin-bottom: 30px;
 }
 .climbing-unit__title{
@@ -271,7 +345,58 @@
     background-color: var(--intro-black);
     margin-right: 5px;
 }
-
+@media (min-width: 768px) {
+    .climbing{
+        background-color: var(--bg);
+        padding: 70px 5% 80px;
+    }
+    .section-inner{
+        max-width: 1004px;
+        margin: 0 auto;
+    }
+    .climbing__intro{
+        font-size: 2.8rem;
+        margin-bottom: 40px;
+    }
+    .climbing__text{
+        margin-bottom: 40px;
+    }
+    .climbing__text:last-of-type{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .climbing__photo{
+        max-width: 816px;
+        margin: 0 auto 45px;
+    }
+    .climbing__list{
+        display: flex;
+        max-width: 816px;
+        margin: 0 auto 30px;
+    }
+    .climbing__item:first-of-type{
+        width: calc((500 / 816) * 100%);
+        margin: 0 12% 0 0;
+    }
+    .climbing__item:last-of-type{
+        flex: 1;
+    }
+    .climbing-unit__title{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .climbing-unit__title-small{
+        font-size: 1.8rem;
+        padding: 15px 0 0 15px;
+    }
+    .climbing-unit__item{
+        font-size: 1.6rem;
+        margin: 0 10px 15px;
+    }
+    .climbing-unit__item::before{
+        margin-right: 5px;
+    }
+}
 /* コメントカード */
 .comment{
     display: flex;
@@ -282,24 +407,45 @@
     padding: 30px 5% 40px;
     margin: 0 auto 100px;
 }
-.comment__text-wrapper{
-}
 .comment__title{
     font-size: 2rem;
     line-height: 1.5;
     font-weight: 600;
     margin-bottom: 25px;
 }
-.comment__text{
-}
 .comment__photo{
     margin-bottom: 30px;
 }
-
+@media (min-width: 768px) {
+    .comment{
+        flex-direction: row-reverse;
+        max-width: 876px;
+        padding: 30px 30px 40px;
+        margin: 0 auto 100px;
+    }
+    .comment__text-wrapper{
+        flex: 1;
+    }
+    .comment__title{
+        margin-bottom: 25px;
+    }
+    .comment__photo{
+        width: calc((300 / 816) * 100%);
+        margin: 0 5% 0 0;
+    }
+}
 /* dfieldバナー */
 .dfield-banner{
     display: block;
     width: calc((300 / 375) * 100%);
+    max-width: 290px;
     filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25)) drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.4));
     margin: 0 auto 100px;
+    transition: all 0.3s ease-out;
+}
+@media (min-width: 768px) {
+    .dfield-banner:hover{
+        filter: drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.4)) drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.4));
+        transition: all 0.3s ease-out;
+    }
 }
