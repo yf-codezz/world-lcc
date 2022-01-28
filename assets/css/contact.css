@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+.title-h2_massage::before{
+    content: "Massage";
+}
+.title-h2_location::before{
+    content: "Location";
+}
+.location__map-wrapper{
+    height: fit-content;
+    margin-bottom: 35px;
+}
+.location__map{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.map__frame{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    filter: saturate(0.6);
+}
+.location{
+    margin-bottom: 100px;
+}
+.location-unit{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+}
+.location-unit__title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.location-unit__title-small{
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+.location-unit__info:last-of-type{
+    order: -1;
+    margin-bottom: 30px;
+}
+.location__item{
+    font-size: 1.4rem;
+}
+@media (min-width: 768px) {
+    .location__map-wrapper{
+        flex: 1;
+        margin-bottom: 0;
+    }
+    .location{
+        margin-bottom: 150px;
+    }
+    .location__content{
+        display: flex;
+        max-width: calc(1004px + 10%);
+        flex-direction: row-reverse;
+        padding: 0 5%;
+        margin: 0 auto;
+    }
+    .location-unit{
+        width: 40%;
+        padding: 0;
+        margin-right: 5%;
+    }
+}
