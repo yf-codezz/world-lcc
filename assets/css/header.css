@@ -168,8 +168,8 @@
     .sns-nav-list::before{
         display: block;
         content: "";
-        min-width: 2px;
-        min-height: 20px;
+        width: 1px;
+        height: 20px;
         background-color: var(--white);
         margin-right: 15px;
     }

@@ -8,7 +8,7 @@
 .advantages__list{
     counter-reset: number;
     padding: 0 5%;
-    margin-bottom: 70px;
+    margin-bottom: 160px;
 }
 .advantages__item{
     display: flex;
@@ -36,10 +36,20 @@
     font-size: 1.6rem;
     line-height: 1.7;
     font-weight: 600;
+    color: var(--text-black);
+    transition: all 0.5s ease-out;
 }
+.advantages__item-text:hover{
+    text-decoration: underline;
+    color: #848A92;
+    transition: all 0.5s ease-out;
+}
+
 .advantages-section{
     padding: 0 5%;
     margin-bottom: 80px;
+    padding-top: 90px;
+    margin-top: -90px;
 }
 .advantages__title::before{
     display: block;
@@ -64,7 +74,7 @@
     }
     .advantages__list{
         width: fit-content;
-        margin: 0 auto 100px;
+        margin: 0 auto 210px;
     }
     .advantages__item{
         align-items: center;
@@ -75,6 +85,9 @@
     }
     .advantages-section{
         margin: 0 auto 100px;
+        padding-top: 110px;
+        margin-top: -110px;
+    
     }
     .advantages__title::before{
         font-size: 3.5rem;
@@ -88,7 +101,7 @@
 .scene{
     counter-reset: number;
     background-color: var(--bg);
-    padding: 40px 5% 80px;
+    padding: 90px 5% 80px;
 }
 .scene__list{
     display: flex;
@@ -149,7 +162,7 @@
 }
 @media (min-width: 768px) {
     .scene{
-        padding: 45px 5% 100px;
+        padding: 110px 5% 100px;
     }
     .scene__list{
         max-width: calc(1004px + 10%);
@@ -236,7 +249,7 @@
     background-position-x: 60%;
     background-position-y: 90%;
     padding: 45px 5%;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 .climbing-drone__title{
     display: flex;
@@ -270,7 +283,7 @@
         background-position-x: 60%;
         background-position-y: 55%;
         padding: 85px 5% 120px;
-        margin-bottom: 10px;
+        margin-bottom: 120px;
     }
     .climbing-drone__title{
         font-size: 3rem;
@@ -287,7 +300,7 @@
 /* 03登山歴多数の弊社だからこそ撮れる、雄大な自然を魅せる『映像心』のある映像 */
 .climbing{
     background-color: var(--bg);
-    padding: 40px 5% 60px;
+    padding: 90px 5% 60px;
 }
 .climbing__intro{
     font-size: 2rem;
@@ -304,8 +317,12 @@
 }
 .climbing__text-link{
     font-weight: 600;
-    text-decoration: underline;
     color: #59A5FF;
+    transition: all 0.5s ease-out;
+}
+.climbing__text-link:hover{
+    text-decoration: underline;
+    transition: all 0.5s ease-out;
 }
 .climbing__photo{
     display: block;
@@ -348,7 +365,7 @@
 @media (min-width: 768px) {
     .climbing{
         background-color: var(--bg);
-        padding: 70px 5% 80px;
+        padding: 110px 5% 80px;
     }
     .section-inner{
         max-width: 1004px;

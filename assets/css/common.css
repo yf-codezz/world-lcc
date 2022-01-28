@@ -208,6 +208,16 @@ label{
         width: 200px;
         height: 48px;
         font-size: 1.8rem;
+        transition: all 0.3s ease-out;
+    }
+    .btn:hover{
+        width: 210px;
+        height: 52px;
+        /* font-size: 2rem; */
+        transition: all 0.3s ease-out;
+    }
+    .link-wrapper__btn:hover{
+        margin-bottom: -4px;
     }
 }
 /* ページトップへbtn */
