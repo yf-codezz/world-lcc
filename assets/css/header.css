@@ -91,6 +91,10 @@
     font-weight: 700;
     color: var(--white);
 }
+.header-nav__link_active{
+    color: #B9B9B9;
+}
+
 #nav-btn:checked ~ .header-nav{
     height: fit-content;
     opacity: 1;

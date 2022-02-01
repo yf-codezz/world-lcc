@@ -376,7 +376,8 @@
         margin-bottom: 40px;
     }
     .climbing__text{
-        margin-bottom: 40px;
+        max-width: 816px;
+        margin: 0 auto 40px;
     }
     .climbing__text:last-of-type{
         text-align: center;
