@@ -95,6 +95,10 @@
   font-weight: bold;
 }
 
+.architecture__gallery {
+  margin-top: 65px;
+}
+
 /* News（新着情報） */
 .news {
   padding: 45px 0 70px 0;
