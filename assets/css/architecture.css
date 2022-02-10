@@ -274,8 +274,7 @@
     }
 
     .cases__container_item {
-        max-width: 470px;
-        margin: 0 auto;
+        width: calc(470 / 1004 * 100%);
 
     }
 
