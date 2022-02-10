@@ -14,7 +14,7 @@
 .mainvisual__h1 {
   font-size: 2.6rem;
   text-align: left;
-  line-height: 39px;
+  line-height: 150%;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
@@ -29,7 +29,6 @@
 @media (min-width:768px) {
   .mainvisual__h1 {
     font-size: 6rem;
-    line-height: 90px;
   }
   .mainvisual__h1 {
     top: calc((70% - 80px) / 2);
@@ -72,17 +71,17 @@
 
 .drone__text-1 {
   font-weight: 500;
-  line-height: 30px;
+  line-height: 185%;
 }
 
 .drone__text-2 {
   margin-top: 31px;
   font-size: 15px;
-  line-height: 28px;
+  line-height: 185%;
 }
 
 .link-wrapper__btn_more {
-  font-weight: bold;
+  font-weight: 700;
   font-family: 'Ubuntu', sans-serif;
   margin-top: 50px;
 }
@@ -119,12 +118,16 @@
     margin-bottom: 100px;
   }
 
-  .link-wrapper__btn_more {
+  .dore__more {
     margin-top: 57px;
   }
   .dore__more {
     margin-bottom: 100px;
   }
+
+  .link-wrapper__btn_more {
+    margin-top: 70px;
+  }  
 }
 
 /* Architecture（建築） */
@@ -154,13 +157,13 @@
   width: 90%;
   max-width: 450px;
   margin: 0 auto;
-  line-height: 28px;
+  line-height: 185%;
 }
 
 .architecture__text-lead {
   font-size: 16px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: 185%;
 }
 
 .architecture__text-order {
@@ -170,7 +173,7 @@
 .link-wrapper__btn_gallery {
   width: 290px;
   height: 46px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .architecture__gallery {
@@ -212,12 +215,11 @@
     max-width: initial;
     margin: 0 0 41px 0;
     font-size: 16px;
-    line-height: 27px;
+    line-height: 170%;
   }
 
   .architecture__text-lead {
     font-size: 18px;
-    line-height: 33px;
   }
 
   .architecture__image {
@@ -267,7 +269,7 @@
   text-align: left;
   display: flex;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .news__content {
@@ -308,7 +310,7 @@
 .news__content_title {
   font-size: 18px;
   text-decoration: underline;
-  line-height: 29px;
+  line-height: 160%;
 }
 
 .news__content_detail {
@@ -331,13 +333,13 @@
  border-radius: 11px;
  position: relative;
  top: -5px;
- font-weight: normal;
+ font-weight: 400;
 }
 
 @media (min-width:768px) {
   .news {
     background-position-y: 35%; 
-    padding: 87px 0 202px 0;
+    padding: 87px 0 105px 0;
   }
   .news__container {
     display: flex;
@@ -393,7 +395,7 @@
 
 .about__container_title {
   color: #4B4B4B;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   margin: 36px 0 10px 0;
   border-bottom: 1px #C4C4C4 solid;
@@ -403,7 +405,7 @@
 
 .about__container_position-name {
   color: #848A92;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   margin-bottom: 30px;
 }
@@ -419,7 +421,7 @@
 .about__container_career-detail {
   font-size: 15px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 165%;
 }
 
 .link-wrapper__about {
@@ -432,30 +434,31 @@
   }
   .about-wrap {
     display: flex;
-    justify-content: center;
-    width: 80%;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 817px;
     margin: 0 auto;
   }
 
-  .about__photo {
-    width: 50%;
+  .about-photo {
+    width: 54%;
   }
 
   .about__image {
     max-width: 440px;
-    height: 250px;
-    margin: 25px 7% 0 0;
+    width: 100%;
+    height: auto;
+    margin: 25px 0 0 0;
     object-fit: contain;
   }
 
   .about__container {
-    width: 50%;
+    width: 36.4%;
     margin: 0;
   }
 
   .about__container_title {
     margin-top: 25px;
-    width: 57.5%;
     font-size: clamp(18px, 1.75vw, 25px);
   }
 
@@ -468,10 +471,14 @@
   }
 
   .about__container_career-detail {
-    font-size: clamp(14px, 1.12vw, 16px);
+    font-size: clamp(13.5px, 1.12vw, 16px);
   }
 
   .link-wrapper__about {
     margin-bottom: 150px;
+  }
+
+  .about__container_career:last-child {
+    margin-bottom: 0;
   }
 }
