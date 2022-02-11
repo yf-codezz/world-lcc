@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../assets/css/reset.css">
+        <link rel="stylesheet" href="../assets/css/common.css">
+        <link rel="stylesheet" href="../assets/css/header.css">
+        <link rel="stylesheet" href="../assets/css/footer.css">
+        <link rel="stylesheet" href="../assets/css/profile.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- GoogleFont -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- NotSansJP --><!-- Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Raleway:ital,wght@0,600;1,600&family=Ubuntu:ital,wght@1,500&family=Ubuntu:wght@500&family=Ubuntu:wght@400&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <title>OUR PROFIEL/プロフィール</title>
+        <link rel="icon" href="../favicon.ico">
+
+    </head>
+    <body class="body">
+        <!-- ヘッダーテンプレート -->
+        <div class="header">
+            <a href="/index.html" class="header__link">
+                <div class="logo header__logo">
+                    <picture class="">
+                        <img src="../assets/svg/logo_c.svg" alt="WORLD合同会社" class="logo__svg">
+                    </picture>
+                </div>
+            </a>
+            <input type="checkbox" name="" id="nav-btn" class="checkbox">
+            <label class="humburger" for="nav-btn">
+                <span class="humburger__line humburger__line_top"></span>
+                <span class="humburger__line humburger__line_middle"></span>
+                <span class="humburger__line humburger__line_bottom"></span>
+            </label>
+            <div class="bg"></div>
+            <div class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="/index.html" class="header-nav__link">HOME</a></li>
+                    <li class="header-nav__item"><a href="/drone/" class="header-nav__link">DRONE</a></li>
+                    <li class="header-nav__item"><a href="/architecture/" class="header-nav__link">ARCHITECTURE</a></li>
+                    <li class="header-nav__item"><a href="/gallery/" class="header-nav__link">GALLERY</a></li>
+                    <li class="header-nav__item"><a href="/profiel/" class="header-nav__link header-nav__link_active">PROFILE</a></li>
+                    <li class="header-nav__item"><a href="/contact/" class="header-nav__link">CONTACT</a></li>
+                </ul>
+                <ul class="sns-nav-list">
+                    <li class="sns-nav-list__item">
+                        <a href="https://www.youtube.com/channel/UCj3h4_SWOQOQ7q6hzUkLqkw" class="sns-nav-list__link" target="blank">
+                            <picture class="">
+                                <img src="../assets/svg/youtube.svg" alt="youtube" class="youtube-svg">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="sns-nav-list__item">
+                        <a href="https://www.facebook.com/taji02019/" class="sns-nav-list__link" target="blank">
+                            <picture class="">
+                                <img src="../assets/svg/facebook.svg" alt="facebook" class="facebook-svg">
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- コンテンツ -->
+        <main class="">
+            <div class="mainvisual">
+                <picture>
+                    <source media="(min-width: 768px)" type="image/webp" srcset="../assets/webp/profile/profile-mainvisual_pc.webp">
+                    <source type="image/webp" srcset="../assets/webp/profile/profile-mainvisual_sp.webp">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="../assets/img/profile/profile-mainvisual_pc.jpg">
+                    <img src="../assets/img/profile/profile-mainvisual_sp.jpg" alt="プロフィール" class="mainvisual__img">
+                </picture>
+                <h1 class="title-h1">
+                    OUR PROFILE<span class="title-h1_small">プロフィール</span>
+                </h1>
+            </div>
+            <div class="main-container">
+                <!-- Company -->
+                <section class="section company">
+                    <h2 class="title-h2 title-h2_company">
+                        <p class="title-h2__text">会社概要</p>
+                    </h2>
+                    <dl class="company__list">
+                        <dt class="company__list_term">社名</dt>
+                        <dd class="company__list_description">ワールド合同会社</dd>
+                    </dl>
+                    <dl class="company__list">
+                        <dt class="company__list_term">代表者</dt>
+                        <dd class="company__list_description">田島 琢</dd>
+                    </dl>
+                    <dl class="company__list">
+                        <dt class="company__list_term">TEL</dt>
+                        <dd class="company__list_description">011-835-3495</dd>
+                    </dl>
+                    <dl class="company__list">
+                        <dt class="company__list_term">FAX</dt>
+                        <dd class="company__list_description">011-835-3495</dd>
+                    </dl>
+                    <dl class="company__list">
+                        <dt class="company__list_term company__list_term-box">一級<br>建築士<br>登録</dt>
+                        <dd class="company__list_description">2019年12月6日</dd>
+                    </dl>
+                    <dl class="company__list">
+                        <dt class="company__list_term company__list_term-box">所有<br>資格等</dt>
+                        <dd class="company__list_description company__list_description-box">一級建築士事務所 <span class="description-small">北海道知事登録(石)第6576号</span><br>一級建築士<span class="description-small">大臣登録 第158771号</span><br>宅地建物取引主任者 <span class="description-small">
+                            東京都知事登録第190407号</span><br>日本ドローン協会会員</dd>
+                    </dl>
+                    <dl class="company__list">
+                        <dt class="company__list_term company__list_term-business">事業内容</dt>
+                        <dd class="company__list_description company__list_description-box company__list_description-number"><span class="description-number">ドローン空撮全般</span><br><span class="description-number">写真撮影、映像制作</span><br><span class="description-number">産業用ドローンによる各種測量、各種点検、農薬散布</span><br><span class="description-number">建築設計監理</span><br><span class="description-number">コンストラクションマネジメント業務</span></dd>
+                    </dl>
+                </section>
+                <!-- Biography -->
+                <section class="section biography">
+                    <h2 class="title-h2 title-h2_biography">
+                        <p class="title-h2__text">経歴</p>
+                    </h2>
+                    <dl class="biography__list">
+                        <dt class="biography__list_term">1987</dt>
+                        <dd class="biography__list_description">三菱地所株式会社入社　札幌支店</dd>
+                    </dl>
+                    <dl class="biography__list">
+                        <dt class="biography__list_term">1993</dt>
+                        <dd class="biography__list_description">同上　工務部</dd>
+                    </dl>
+                    <dl class="biography__list">
+                        <dt class="biography__list_term">1998</dt>
+                        <dd class="biography__list_description">同上　札幌支店</dd>
+                    </dl>
+                    <dl class="biography__list">
+                        <dt class="biography__list_term">2001</dt>
+                        <dd class="biography__list_description">三菱地所設計　出向　札幌支店</dd>
+                    </dl>
+                    <dl class="biography__list">
+                        <dt class="biography__list_term">2001</dt>
+                        <dd class="biography__list_description">同上　工務部</dd>
+                    </dl>
+                    <dl class="biography__list">
+                        <dt class="biography__list_term">2006</dt>
+                        <dd class="biography__list_description">三菱地所株式会社　ビル管理部</dd>
+                    </dl>
+                    <dl class="biography__list">
+                        <dt class="biography__list_term">2007</dt>
+                        <dd class="biography__list_description">三菱地所ビルマネジメント　出向丸の内技術部</dd>
+                    </dl>
+                    <dl class="biography__list">
+                        <dt class="biography__list_term">2008</dt>
+                        <dd class="biography__list_description">三菱地所設計　出向　札幌支店</dd>
+                    </dl>
+                    <dl class="biography__list">
+                        <dt class="biography__list_term">2018</dt>
+                        <dd class="biography__list_description">三菱地所株式会社　退職</dd>
+                    </dl>
+                    <dl class="biography__list">
+                        <dt class="biography__list_term">2019</dt>
+                        <dd class="biography__list_description">ワールド一級建築士事務所　登録</dd>
+                    </dl>
+                </section>
+            </div>
+  
+
+        
+
+            <!-- フッターテンプレート -->
+            <div class="contact-set">
+                <p class="contact-set__text">まずはお気軽にご相談ください</p>
+                <a class="btn btn_contact" href="/contact/">お問い合わせ</a>
+            </div>
+            <a href="#" class="floating">
+                <picture>
+                    <img src="../assets/svg/page-top.svg" alt="ページトップへ" class="floating__svg">
+                </picture>
+            </a>
+        </main>
+
+        <div class="footer">
+            <div class="footer__inner">
+                <a href="../index.html" class="footer__link">
+                    <div class="logo footer__logo">
+                        <picture class="">
+                            <img src="../assets/svg/logo_c.svg" alt="WORLD合同会社" class="logo__svg">
+                        </picture>
+                    </div>
+                </a>
+                <div class="footer__content">
+                    <p class="footer__co-title">WORLD合同会社</p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <dl class="footer-unit">
+                                <dt class="footer-unit__title">INFOMATION</dt>
+                                <dd class="footer-unit__content">
+                                    <ul class="info__list">
+                                        <li class="info__item">〒004-0012<br>北海道札幌市厚別区もみじ台南3丁目11－24</li>
+                                        <li class="info__item">TEL : 011-835-3495</li>
+                                        <li class="info__item">MOBILE : 090-1640-2722</li>
+                                        <li class="info__item">E-mail : tajima@world-llc.com</li>
+                                        <li class="info__item">URL : <a class="info__item-link" href="#">https://world-llc.com</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="footer__item">
+                            <dl class="footer-unit">
+                                <dt class="footer-unit__title">SOCIAL LINKS</dt>
+                                <dd class="footer-unit__content">
+                                    <ul class="info__list info__list_sns">
+                                        <li class="info__item info__item_sns">
+                                            <a href="https://www.youtube.com/channel/UCj3h4_SWOQOQ7q6hzUkLqkw" class="info__item-link info__item-link_youtube" target="blank">
+                                                <picture class="">
+                                                    <img src="../assets/svg/youtube.svg" alt="youtube" class="youtube-svg">
+                                                </picture>
+                                            </a>
+                                        </li>
+                                        <li class="info__item info__item_sns">
+                                            <a href="https://www.facebook.com/taji02019/" class="info__item-link info__item-link_facebook" target="blank">
+                                                <picture class="">
+                                                    <img src="../assets/svg/facebook.svg" alt="facebook" class="facebook-svg">
+                                                </picture>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+
+                    </ul>
+                </div>
+                <p class="copyright">Copyright © 2021 by WORLD LLC All rights reserved</p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../header.js"></script>
+    </body>
+</html>

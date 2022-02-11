@@ -1,0 +1,190 @@
+.title-h2_company::before {
+    content: "Company";
+}
+
+.mainvisual {
+    margin-bottom: 69px;
+}
+
+@media (min-width:768px) {
+    .main-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1003px;
+        width: 89%;
+        margin: 0 auto 150px auto;
+    }
+
+    .mainvisual {
+        margin-bottom: 100px;
+    }
+}
+
+/* Company */
+.title-h2_company {
+    margin-bottom: 30px;
+}
+
+.company__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 89%;
+    margin: 0 auto;
+    border-bottom: 1px solid #C4C4C4;
+    padding: 2.67% 0;
+}
+
+.company__list:last-child {
+    border-bottom: none;
+}
+
+.company__list_term {
+    width: calc((70 / 335) *100%);
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #4B4B4B;
+}
+
+.company__list_term-box {
+    line-height: 130%;
+}
+
+.company__list_description {
+    width: calc((265 / 335) *100%);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+    counter-reset: number 0;
+}
+
+.company__list_description-box {
+    line-height: 175%;
+}
+
+.description-small {
+    font-size: 11px;
+}
+
+.company__list_description-number {
+    position: relative;
+    left: 16px;
+}
+
+.description-number {
+    position: relative;
+}
+
+.description-number::before {
+    content: counter(number) ".";
+    counter-increment: number 1;
+    position: absolute;
+    top: -4px;
+    left: -14px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3C3C3C;
+}
+
+@media (min-width:768px) {
+    .title-h2_company {
+        margin-bottom: 53px;
+    }
+
+    .company {
+        width: calc((439 / 1003) * 100%);
+    }
+    .company__list {
+        width: 100%;
+        padding: 2.28% 0;
+    }
+
+    .company__list_term {
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .company__list_description {
+        font-size: 16px;
+    }
+
+    .description-small {
+        font-size: 16px;
+    }
+    
+    .company__list_term-business {
+        align-self: flex-start;
+    }
+    .description-number::before {
+        top: -4px;
+        left: -14px;
+        font-size: 16px;
+    }
+}
+
+/* Biography */
+.title-h2_biography {
+    margin-bottom: 40px;
+}
+
+.title-h2_biography::before {
+    content: "Biography";
+}
+
+.biography {
+    margin: 105px 0 100px 0;
+}
+
+.biography__list {
+    width: 89%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px auto;
+}
+
+.biography__list_term {
+    width: 34px;
+    margin-right: 40px;
+    font-size: clamp(13px, 4vw, 15px);
+    font-weight: 500;
+    line-height: 175%;
+}
+
+@media (max-width:340px) {
+    .biography__list_term {
+        margin-right: 20px;
+    }
+}
+
+.biography__list_description {
+    width: 225px;
+    font-size: clamp(13px, 4vw, 15px);
+    line-height: 175%;
+}
+
+@media (min-width:768px) {
+    .title-h2_biography {
+        margin-bottom: 64px;
+    }
+
+    .biography {
+        width: calc((438 / 1003) * 100%);
+        margin: 0;
+    }
+
+    .biography__list {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    .biography__list_term {
+        min-width: 36px;
+        margin-right: calc((50 / 438) * 100%);
+        font-size: 16px;
+    }
+
+    .biography__list_description {
+        width: calc((352 / 438) * 100%);
+        font-size: 16px;
+    }
+}
