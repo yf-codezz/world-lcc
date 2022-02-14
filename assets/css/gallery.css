@@ -286,6 +286,12 @@
     .works__container_item-img {
         height: 100%;
         width: 100%;
+        transition: all 0.3s;
+    }
+
+    .works__container_item-img:hover {
+        box-shadow: 7px 7px 8px 0 rgba(0, 0, 0, 0.4);
+        cursor: pointer;
     }
 
     .modal__container_item-img {
