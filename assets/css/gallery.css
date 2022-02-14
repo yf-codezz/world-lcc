@@ -168,7 +168,7 @@
 .close-modal-bottom {
     position: absolute;
     color: #fff;
-    bottom: -15%;
+    bottom: -55px;
     left: 50%;
     transform: translate(-50%,-50%);
     border-bottom: 2px #fff solid;
@@ -183,7 +183,7 @@
 
 .modal__textbox {
     width: 90%;
-    height: 29vh;
+    padding-bottom: 55px;
     margin: 35px auto 0 auto;
 }
 
