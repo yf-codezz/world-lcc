@@ -205,15 +205,14 @@ label{
         margin-bottom: 20px;
     }
     .btn{
-        width: 200px;
+        width: 290px;
         height: 48px;
         font-size: 1.8rem;
         transition: all 0.3s ease-out;
     }
     .btn:hover{
-        width: 210px;
+        width: 330px;
         height: 52px;
-        /* font-size: 2rem; */
         transition: all 0.3s ease-out;
     }
     .link-wrapper__btn:hover{
@@ -236,5 +235,42 @@ label{
     .floating__svg:hover{
         filter: drop-shadow(0px 8px 5px rgba(0, 0, 0, 0.6)) ;
         transition: all 0.3s ease-out;
+    }
+}
+/* コメントカード ドローンページ、建築ページで使用*/
+.comment{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 88%;
+    background-color: var(--white);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 0px 0px 6px rgba(0, 0, 0, 0.25);
+    padding: 30px 5% 40px;
+    margin: 0 auto 100px;
+}
+.comment__title{
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.comment__photo{
+    margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+    .comment{
+        flex-direction: row-reverse;
+        max-width: 876px;
+        padding: 30px 30px 40px;
+        margin: 0 auto 100px;
+    }
+    .comment__text-wrapper{
+        flex: 1;
+    }
+    .comment__title{
+        margin-bottom: 25px;
+    }
+    .comment__photo{
+        width: calc((300 / 816) * 100%);
+        margin: 0 5% 0 0;
     }
 }

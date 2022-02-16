@@ -184,7 +184,9 @@
     }
 
     .architecture__gallery {
-        padding: 58px 0;
+        display: flex;
+        flex-direction: column;
+        padding: 58px 0 0 0;
         margin-bottom: 100px;
     }
 
@@ -192,6 +194,17 @@
         line-height: 32px;
         margin-bottom: 30px;
     }
+    .link-wrapper__btn_gallery {
+        margin-bottom: 58px;
+    }
+    
+    .link-wrapper__btn_gallery:hover {
+        width: 330px;
+        height: 56px;
+        margin-bottom: 50px;
+        transition: all 0.3s ease-out;
+    }
+    
 }
 
 /* Cases */

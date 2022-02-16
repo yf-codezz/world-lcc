@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-.advantages{
-}
 .title-h2_advantages::before{
     content: "Advantages";
 }
@@ -37,12 +35,12 @@
     line-height: 1.7;
     font-weight: 600;
     color: var(--text-black);
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
 }
 .advantages__item-text:hover{
     text-decoration: underline;
     color: #848A92;
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .advantages-section{
@@ -70,8 +68,6 @@
     visibility: collapse;
 }
 @media (min-width: 768px) {
-    .advantages{
-    }
     .advantages__list{
         width: fit-content;
         margin: 0 auto 210px;
@@ -117,8 +113,6 @@
 }
 .scene__item:nth-last-of-type(2){
     margin-bottom: 0;
-}
-.scene-unit{
 }
 .scene-unit__title{
     display: flex;
@@ -191,8 +185,6 @@
 
 }
 /* 02各法令に準じたドローン飛行 */
-.compliance{
-}
 .compliance__text{
     margin-bottom: 15px;
 }
@@ -223,8 +215,6 @@
     margin: 3px 15px 0 0;
 }
 @media (min-width: 768px) {
-    .compliance{
-    }
     .compliance__text{
         text-align: center;
         margin-bottom: 30px;
@@ -342,8 +332,6 @@
     font-size: 1.6rem;
     padding: 15px 0 0 15px;
 }
-.climbing-unit__content{
-}
 .climbing-unit__list{
     display: flex;
     flex-wrap: wrap;
@@ -413,43 +401,6 @@
     }
     .climbing-unit__item::before{
         margin-right: 5px;
-    }
-}
-/* コメントカード */
-.comment{
-    display: flex;
-    flex-direction: column-reverse;
-    width: 88%;
-    background-color: var(--white);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), 0px 0px 6px rgba(0, 0, 0, 0.25);
-    padding: 30px 5% 40px;
-    margin: 0 auto 100px;
-}
-.comment__title{
-    font-size: 2rem;
-    line-height: 1.5;
-    font-weight: 600;
-    margin-bottom: 25px;
-}
-.comment__photo{
-    margin-bottom: 30px;
-}
-@media (min-width: 768px) {
-    .comment{
-        flex-direction: row-reverse;
-        max-width: 876px;
-        padding: 30px 30px 40px;
-        margin: 0 auto 100px;
-    }
-    .comment__text-wrapper{
-        flex: 1;
-    }
-    .comment__title{
-        margin-bottom: 25px;
-    }
-    .comment__photo{
-        width: calc((300 / 816) * 100%);
-        margin: 0 5% 0 0;
     }
 }
 /* dfieldバナー */
