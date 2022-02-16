@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../assets/css/reset.css">
+        <link rel="stylesheet" href="../assets/css/common.css">
+        <link rel="stylesheet" href="../assets/css/header.css">
+        <link rel="stylesheet" href="../assets/css/footer.css">
+        <link rel="stylesheet" href="../assets/css/gallery.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- GoogleFont -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- NotSansJP --><!-- Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Raleway:ital,wght@0,600;1,600&family=Ubuntu:ital,wght@1,500&family=Ubuntu:wght@500&family=Ubuntu:wght@400&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+        <title>GALLERY/ギャラリー</title>
+        <link rel="icon" href="../favicon.ico">
+
+    </head>
+    <body class="body">
+        <!-- ヘッダーテンプレート -->
+        <div class="header">
+            <a href="/index.html" class="header__link">
+                <div class="logo header__logo">
+                    <picture class="">
+                        <img src="../assets/svg/logo_c.svg" alt="WORLD合同会社" class="logo__svg">
+                    </picture>
+                </div>
+            </a>
+            <input type="checkbox" name="" id="nav-btn" class="checkbox">
+            <label class="humburger" for="nav-btn">
+                <span class="humburger__line humburger__line_top"></span>
+                <span class="humburger__line humburger__line_middle"></span>
+                <span class="humburger__line humburger__line_bottom"></span>
+            </label>
+            <div class="bg"></div>
+            <div class="header-nav">
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="/index.html" class="header-nav__link">HOME</a></li>
+                    <li class="header-nav__item"><a href="/drone/" class="header-nav__link">DRONE</a></li>
+                    <li class="header-nav__item"><a href="/architecture/" class="header-nav__link">ARCHITECTURE</a></li>
+                    <li class="header-nav__item"><a href="/gallery/" class="header-nav__link header-nav__link_active">GALLERY</a></li>
+                    <li class="header-nav__item"><a href="/profiel/" class="header-nav__link">PROFILE</a></li>
+                    <li class="header-nav__item"><a href="/contact/" class="header-nav__link">CONTACT</a></li>
+                </ul>
+                <ul class="sns-nav-list">
+                    <li class="sns-nav-list__item">
+                        <a href="https://www.youtube.com/channel/UCj3h4_SWOQOQ7q6hzUkLqkw" class="sns-nav-list__link" target="blank">
+                            <picture class="">
+                                <img src="../assets/svg/youtube.svg" alt="youtube" class="youtube-svg">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="sns-nav-list__item">
+                        <a href="https://www.facebook.com/taji02019/" class="sns-nav-list__link" target="blank">
+                            <picture class="">
+                                <img src="../assets/svg/facebook.svg" alt="facebook" class="facebook-svg">
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- コンテンツ -->
+        <main class="">
+            <div class="mainvisual">
+                <picture>
+                    <source media="(min-width: 768px)" type="image/webp" srcset="../assets/webp/gallery/gallery-mainvisual_pc.webp">
+                    <source type="image/webp" srcset="../assets/webp/gallery/gallery-mainvisual_sp.webp">
+                    <source media="(min-width: 768px)" type="image/jpeg" srcset="../assets/img/gallery/gallery-mainvisual_pc.jpg">
+                    <img src="../assets/img/gallery/gallery-mainvisual_sp.jpg" alt="ギャラリー" class="mainvisual__img">
+                </picture>
+                <h1 class="title-h1">
+                    GALLERY<span class="title-h1_small">ギャラリー</span>
+                </h1>
+            </div>
+            <div class="intro">
+                <p class="text intro__text">撮影した映像作品や、前職会社在籍時に携わった建築物件をご紹介いたします。</p>
+            </div>
+            <!-- Movies -->
+            <section class="section movies">
+                <h2 class="title-h2 title-h2_movies">
+                    <p class="title-h2__text">映像</p>
+                </h2>
+                <div class="movies__container">
+                    <div class="movies__container_inner">
+                        <a href="https://www.youtube.com/watch?v=8oRUGMgNkwA&t=6s" target="_blank" class="movies__container_items">
+                            <picture>
+                                <source type="image/webp" srcset="../assets/webp/gallery/gallery-movies1.webp"> 
+                                <img class="movies__container_item" src="../assets/img/gallery/gallery-movies1.jpg" alt="十勝岳連峰">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="movies__container_inner">
+                        <a href="https://www.youtube.com/watch?v=psmu3Ci1tT8&t=175s" target="_blank" class="movies__container_items">
+                            <picture>
+                                <source type="image/webp" srcset="../assets/webp/gallery/gallery-movies2.webp"> 
+                                <img class="movies__container_item" src="../assets/img/gallery/gallery-movies2.jpg" alt="十勝岳冠雪">
+                            </picture>                       
+                        </a>
+                    </div>
+                    <div class="movies__container_inner">
+                        <a href="https://www.youtube.com/watch?v=8RqBc4T-O5s" target="_blank" class="movies__container_items">
+                            <picture>
+                                <source type="image/webp" srcset="../assets/webp/gallery/gallery-movies3.webp"> 
+                                <img class="movies__container_item" src="../assets/img/gallery/gallery-movies3.jpg" alt="羊蹄山冬景色">
+                            </picture>                     
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- Works -->
+            <section class="section works">
+                <h2 class="title-h2 title-h2_works">
+                    <p class="title-h2__text">建築物件</p>
+                </h2>
+                <div class="works__container">
+                    <div id="open-modal-1" class="works__container_item">
+                        <picture class="works__container_item-photo">
+                            <source type="image/webp" srcset="../assets/webp/gallery/works-mutual-aid-building.webp">
+                            <img class="works__container_item-img" src="../assets/img/gallery/works-mutual-aid-building.jpg" alt="共済ビル">
+                        </picture>
+                    </div>
+                    <!-- モーダルコンテンツ(1) -->
+                    <section id="modal__area-1" class="modal__area">
+                        <div id="modal__bg" class="modal__bg"></div>
+                        <div class="modal__wrapper">
+                          <div class="modal__dontents">
+                              <div class="modal__item">
+                                  <picture class="works__container_item-photo">
+                                      <source type="image/webp" srcset="../assets/webp/gallery/works-mutual-aid-building.webp">
+                                      <img id="modal__container_item-img" class="works__container_item-img" src="../assets/img/gallery/works-mutual-aid-building.jpg" alt="共済ビル">
+                                  </picture>
+                                  <div class="modal__textbox">
+                                      <div class="modal__heading">
+                                        <h3 class="modal__title">共済ビル</h3>
+                                        <span class="modal__sub-title">前職会社在籍時に携わった建築物件</span>
+                                        </div>
+                                      <p class="modal__text">耐震診断、耐震補強基本計画、耐震補強実施設計、工事監理を担当し、大規模改修に携わりました。</p>
+                                      <div class="modal__detail">
+                                          <time class="modal__detail-time" datetime="2016">2016年</time>
+                                          <div class="modal__detail-content">
+                                            <span class="modal__detail-type">耐震 / 改修</span>
+                                            <span class="modal__detail-type">大型施設</span>
+                                            <span class="modal__detail-type">複合ビル</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </div>
+                          </div>
+                          <span id="close-modal" class="close-modal close-modal-top"></span>
+                          <span id="close-modal" class="close-modal close-modal-bottom">Close ×</span>
+                        </div>
+                    </section>
+                    <div id="open-modal-2" class="works__container_item">
+                        <picture class="works__container_item-photo">
+                            <source type="image/webp" srcset="../assets/webp/gallery/works-sapporo-building.webp">
+                            <img class="works__container_item-img" src="../assets/img/gallery/works-sapporo-building.jpg" alt="札幌北ビル">
+                        </picture>
+                    </div>
+                    <!-- モーダルコンテンツ(2) -->
+                    <section id="modal__area-2" class="modal__area">
+                        <div id="modal__bg" class="modal__bg"></div>
+                        <div class="modal__wrapper">
+                          <div class="modal__dontents">
+                              <div class="modal__item">
+                                  <picture class="works__container_item-photo">
+                                      <source type="image/webp" srcset="../assets/webp/gallery/works-sapporo-building.webp">
+                                      <img id="modal__container_item-img" class="modal__container_item-img" src="../assets/img/gallery/works-sapporo-building.jpg" alt="札幌北ビル">
+                                  </picture>
+                                  <div class="modal__textbox">
+                                      <div class="modal__heading">
+                                        <h3 class="modal__title">札幌 北ビル</h3>
+                                        <span class="modal__sub-title">前職会社在籍時に携わった建築物件</span>
+                                      </div>
+                                      <p class="modal__text">工事監理を担当し、大規模オフィスビルの建設に携わりました。</p>
+                                      <div class="modal__detail">
+                                          <time class="modal__detail-time" datetime="2012">2012年</time>
+                                          <div class="modal__detail-content">
+                                            <span class="modal__detail-type">工事監理</span>
+                                            <span class="modal__detail-type">大型施設</span>
+                                            <span class="modal__detail-type">オフィスビル</span>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <span id="close-modal" class="close-modal close-modal-top"></span>
+                          <span id="close-modal" class="close-modal close-modal-bottom">Close ×</span>
+                        </div>
+                    </section>
+                </div>
+                <p class="works__container_text">前職会社在籍時に携わった建築物件。</p>
+            </section>
+
+        
+
+            <!-- フッターテンプレート -->
+            <div class="contact-set">
+                <p class="contact-set__text">まずはお気軽にご相談ください</p>
+                <a class="btn btn_contact" href="/contact/">お問い合わせ</a>
+            </div>
+            <a href="#" class="floating">
+                <picture>
+                    <img src="../assets/svg/page-top.svg" alt="ページトップへ" class="floating__svg">
+                </picture>
+            </a>
+        </main>
+
+        <div class="footer">
+            <div class="footer__inner">
+                <a href="../index.html" class="footer__link">
+                    <div class="logo footer__logo">
+                        <picture class="">
+                            <img src="../assets/svg/logo_c.svg" alt="WORLD合同会社" class="logo__svg">
+                        </picture>
+                    </div>
+                </a>
+                <div class="footer__content">
+                    <p class="footer__co-title">WORLD合同会社</p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <dl class="footer-unit">
+                                <dt class="footer-unit__title">INFOMATION</dt>
+                                <dd class="footer-unit__content">
+                                    <ul class="info__list">
+                                        <li class="info__item">〒004-0012<br>北海道札幌市厚別区もみじ台南3丁目11－24</li>
+                                        <li class="info__item">TEL : 011-835-3495</li>
+                                        <li class="info__item">MOBILE : 090-1640-2722</li>
+                                        <li class="info__item">E-mail : tajima@world-llc.com</li>
+                                        <li class="info__item">URL : <a class="info__item-link" href="#">https://world-llc.com</a></li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li class="footer__item">
+                            <dl class="footer-unit">
+                                <dt class="footer-unit__title">SOCIAL LINKS</dt>
+                                <dd class="footer-unit__content">
+                                    <ul class="info__list info__list_sns">
+                                        <li class="info__item info__item_sns">
+                                            <a href="https://www.youtube.com/channel/UCj3h4_SWOQOQ7q6hzUkLqkw" class="info__item-link info__item-link_youtube" target="blank">
+                                                <picture class="">
+                                                    <img src="../assets/svg/youtube.svg" alt="youtube" class="youtube-svg">
+                                                </picture>
+                                            </a>
+                                        </li>
+                                        <li class="info__item info__item_sns">
+                                            <a href="https://www.facebook.com/taji02019/" class="info__item-link info__item-link_facebook" target="blank">
+                                                <picture class="">
+                                                    <img src="../assets/svg/facebook.svg" alt="facebook" class="facebook-svg">
+                                                </picture>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </dd>
+                            </dl>
+                        </li>
+
+                    </ul>
+                </div>
+                <p class="copyright">Copyright © 2021 by WORLD LLC All rights reserved</p>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../header.js"></script>
+        <script type="text/javascript" src="../assets/js/gallery.js"></script>
+    </body>
+</html>
